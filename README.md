@@ -1,4 +1,4 @@
-# Link
-• [1](https://anime-sama.fr/)
+# Les reseau :
+• [Discord](https://discord.gg/invite/uygZmX8uWM)
 
-• [2](https://anime-sama.fr/)
+• [Disboard](https://disboard.org/fr/server/1059120003087093850)
