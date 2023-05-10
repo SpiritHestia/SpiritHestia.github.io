@@ -1,9 +1,150 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Bienvenue sur le site de Hestia !</h1>
-    </body>
+<html>
+<head>
+    <title>Project Hestia - Site en cours de développement</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            max-width: 50vw;
+            height: 50vh;
+            padding: 20px;
+            background-color: #C0B283;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #ffd700;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: default;
+            transition: transform 0.2s ease;
+        }
+        h1:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            margin: 0;
+            color: #333333;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: default;
+            transition: transform 0.2s ease;
+        }
+        h2:hover {
+            transform: scale(1.025);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7289DA;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+            outline: transparent solid 2px;
+            border: none;
+            cursor: pointer;
+            justify-content: center;
+            transition: background-color 0.2s ease, ouline-color 0.2s ease;
+            -webkit-transition: background-color 0.2s ease, ouline-color 0.2s ease;
+            -moz-transition: background-color 0.2s ease, ouline-color 0.2s ease;
+            -o-transition: background-color 0.2s ease, ouline-color 0.2s ease;
+        }
+        .button:hover {
+            background-color: #5a6b8c;
+        }
+        .button:active, .button:focus {
+            outline-color: #fff;
+        }
+
+        .button i {
+            margin-right: 10px;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: transform 0.2s ease;
+        }
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .text {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                max-width: 80vw;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <section>
+                <img class="logo" alt="Logo" src="assets/logo.webp" />
+                <h1>Project Hestia</h1>
+            </section>
+            <section class="text">
+                <h2>Site en cours de développement</h2>
+                <p>Merci de votre visite !</p>
+                <p>Nous travaillons actuellement sur ce site et il sera bientôt disponible.</p>
+                <p>N'hésitez pas à rejoindre notre serveur Discord pour être informé de la sortie du site :</p>
+            </section>
+            <section>
+                <a href="https://discord.gg/uygZmX8uWM" class="button"><i class="bi bi-discord"></i>Discord</a>
+            </section>
+        </div>
+    </div>
+</body>
 </html>
